@@ -1,0 +1,19 @@
+//const dogsJulia = [3, 5, 2, 12, 7];
+//const dogsKate = [4, 1, 15, 8, 3];
+
+const dogsJulia = [9, 16, 6, 8, 3];
+const dogsKate = [10, 5, 6, 1, 4];
+
+const dogsJuliaLast = dogsJulia.slice(1, 3);
+const dogsTotal = dogsJuliaLast.concat(dogsKate);
+
+dogsTotal.forEach(function (dog, i, arr) {
+  if (dog >= 3) {
+    console.log(`Dog number ${i + 1} is an adult, and is ${dog} years old`);
+  } else {
+    console.log(`Dog number ${i + 1} is still a puppy `);
+  }
+});
+
+console.log(dogsJulialast);
+console.log(dogsTotal);
